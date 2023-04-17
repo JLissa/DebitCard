@@ -9,7 +9,7 @@ public class DebitCardTest {
     void shouldTest() {
         open("http://localhost:9999");
         $("[data-test-id=name] input").setValue("Петр Петров");
-        $("[data-test-id=phone] input").setValue("+783947272");
+        $("[data-test-id=phone] input").setValue("+78394727222");
         $("[data-test-id=agreement]").click();
         $(".button").click();
         $(".Success_successBlock__2L3Cw").shouldHave(text("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время."));
